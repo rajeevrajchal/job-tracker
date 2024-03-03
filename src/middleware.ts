@@ -16,6 +16,7 @@ export async function middleware(request: NextRequest) {
   const {
     data: { user },
   } = await supabase.auth.getUser();
+  console.log("the login is: middleware", user);
 
   if (user && publicRoute.includes(request.nextUrl.pathname)) {
     return NextResponse.redirect(new URL(Route.main, request.url));
@@ -28,7 +29,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: [
-    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
-  ],
+  matcher: ["/", "/login", "/reset-password"],
 };
