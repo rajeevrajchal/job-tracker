@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <Theme appearance="dark">
+        <Theme appearance="light">
           <main className="w-screen h-screen">{children}</main>
         </Theme>
       </body>
