@@ -1,15 +1,12 @@
-import { Button, Flex, Text } from "@radix-ui/themes";
-import { logout } from "./action";
+import { Flex, Text } from "@radix-ui/themes";
 
 const Home = () => {
   return (
-    <form action={logout}>
-      <Flex direction="column" gap="2">
-        <Text>Hello from Radix Themes :)</Text>
-        <Button>Logout</Button>
-      </Flex>
-    </form>
+    <Flex align="center" justify="center" className="h-screen w-screen">
+      <Text size="7">Lets Code Something</Text>
+    </Flex>
   );
 };
 
 export default Home;
+  
