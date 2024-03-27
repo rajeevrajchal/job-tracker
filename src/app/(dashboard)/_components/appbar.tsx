@@ -9,7 +9,7 @@ const AppBar = () => {
   const router = useRouter();
 
   return (
-    <Flex align="center" justify="end" className="border-b" p="4">
+    <Flex align="center" justify="end" className="border-b" p="2">
       <Dropdown
         trigger={
           <Avatar

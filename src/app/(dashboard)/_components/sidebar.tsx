@@ -48,11 +48,11 @@ const Sidebar = () => {
   return (
     <Flex
       direction="column"
-      className="w-[250px] h-full border-r"
-      p="4"
-      gap="7"
+      className="w-[200px] h-full border-r"
+      p="2"
+      gap="4"
     >
-      <Box>
+      <Box className="flex items-center justify-center">
         <p>Job App</p>
       </Box>
       <Flex direction="column" className="flex-1" gap="4">
